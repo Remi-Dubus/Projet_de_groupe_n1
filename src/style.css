@@ -3,3 +3,50 @@ margin: 0;
 padding: 0;
 outline: solid 1px red;
 }
+
+:root{
+    --primary-color: #125b89;
+    --secondary-color: #FFF6EC;
+    --accent-color: #D0E7F6;
+}
+
+/* HEADER SECTION TOP 3 */
+
+#top3 {
+    border-radius: 10%;
+
+    margin: 1em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    outline: solid 5px var(--primary-color);
+}
+#top3 h2 {
+    max-width: 10em;
+    margin: 1em;
+}
+#top3 img{
+    max-width: 8em;
+    border-radius: 10%;
+}
+#top3 p {
+    max-width: 10em;
+    
+}
+
+#top3 article{
+    margin: 1em;
+}
+.restaurant1-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+#restaurant2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1em;
+}
