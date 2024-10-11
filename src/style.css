@@ -1,52 +1,98 @@
-*{
-margin: 0;
-padding: 0;
-outline: solid 1px red;
+* {
+  margin: 0;
+  padding: 0;
+  outline: solid 1px red;
 }
 
-:root{
-    --primary-color: #125b89;
-    --secondary-color: #FFF6EC;
-    --accent-color: #D0E7F6;
+:root {
+  --primary-color: #125b89;
+  --secondary-color: #fff6ec;
+  --accent-color: #d0e7f6;
 }
 
 /* HEADER SECTION TOP 3 */
 
 #top3 {
-    border-radius: 10%;
+  border-radius: 2em;
 
-    margin: 1em 1em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  margin: 1em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-    outline: solid 5px var(--primary-color);
+  outline: solid 5px var(--primary-color);
 }
 #top3 h2 {
-    max-width: 10em;
-    margin: 1em;
+  max-width: 10em;
+  margin: 1em;
+  color: var(--primary-color);
 }
-#top3 img{
-    max-width: 8em;
-    border-radius: 10%;
+#top3 h3 {
+  background-color: var(--secondary-color);
+  outline: solid 2px var(--primary-color);
+  color: var(--primary-color);
+
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+}
+#top3 img {
+  max-width: 8em;
+  border-radius: 10%;
+  outline: solid 2px var(--primary-color);
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 }
 #top3 p {
-    max-width: 10em;
-    
+  max-width: 10em;
+  background-color: var(--secondary-color);
+  outline: solid 2px var(--primary-color);
+  color: var(--primary-color);
+
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 }
 
-#top3 article{
-    margin: 1em;
+#top3 article {
+  margin: 1em;
 }
-.restaurant1-3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.restaurant1-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
 }
 #restaurant2 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 1em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1em;
+}
+
+@media screen and (min-width: 992px) {
+    #top3{
+        display : flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #top3 h2 {
+        max-width: 6em;
+    }
+    #top3 section {
+        display: flex;
+        flex-direction: row;
+    }
+    #restaurant2{
+        display: flex;
+        flex-direction: row;
+    }
+
+
 }
