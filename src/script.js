@@ -43,20 +43,15 @@ const newRestaurant = [
 function createCard(restaurant){
     const { picture, name, adresse, specialities, hour, price, rating } = restaurant;
 
-    const card = document.createElement("card-restaurant");
-    card.classList.add("card-restaurant");
-    cards.appendChild(card);
+    const cardRestaurant = document.createElement("article");
+    cardRestaurant.classList.add("card-restaurant");
+    cards.appendChild(cardRestaurant);
 
     const cardImg = document.createElement("img");
     cardImg.src = picture;
     cardImg.alt = name;
     cardImg.classList.add("picture-restaurant");
-    card.appendChild(cardImg);
-
-    const cardAdress = document.querySelector("card-adress");
-    card.("card-adress");
-    cards.appendChild(card);
-
+    cardRestaurant.appendChild(cardImg);
 }
 
 newRestaurant.forEach((restaurant) => createCard(restaurant));
