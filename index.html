@@ -24,7 +24,7 @@
                     <img src="" alt="">
                     <p></p>
                 </article>
-                <article id="resaurant2">
+                <article id="restaurant2">
                     <img src="" alt="">
                     <p></p>
                 </article>
@@ -39,12 +39,13 @@
         <section>
             <details>
             <summary>Filtres</summary>
-                <h3 class="filter">Spécialités</h3>
-                <form>
-                <fieldset>
-                    <ul>
+                
+                <form >
+                <fieldset id="filter-restaurants">
+                    <h3 class="title-filtre">Spécialités</h3>
+                    <ul class="liste">
                     <li>
-                        <input type="radio" id="radio-français" name="specilities-radio" value="fr">
+                        <input type="radio" id="radio-français" name="filter-radio" value="fr">
                         <label for="radio-français">Terroir français</label> 
                     </li>
                     <li>
@@ -64,8 +65,8 @@
                         <label for="radio-veggie">Cuisine veggie</label>
                     </li>
                 </ul>
-                <h3 class="filter">Notes</h3>
-                <ul>
+                <h3 class="title-filtre">Notes</h3>
+                <ul class="liste">
                     <li>
                         <input type="radio" id="radio-4love" name="filter-radio" value="4love">
                         <label for="radio-4love">❤️❤️❤️❤️</label> 
@@ -83,8 +84,8 @@
                         <label for="radio-1love">❤️</label> 
                     </li>
                 </ul>
-                <h3 class="filter">Heures d'ouverture</h3>
-                <ul>
+                <h3 class="title-filtre">Heures d'ouverture</h3>
+                <ul class="liste">
                     <li>
                         <input type="radio" id="radio-midi" name="filter-radio" value="midi">
                         <label for="radio-midi">Midi</label> 
@@ -94,8 +95,8 @@
                         <label for="radio-soir">Soir</label> 
                     </li>
                 </ul>
-                <h3 class="filter">Fourchette de prix</h3>
-                <ul>
+                <h3 class="title-filtre">Fourchette de prix</h3>
+                <ul class="liste">
                     <li>
                         <input type="radio" id="radio-moins25" name="filter-radio" value="25">
                         <label for="radio-moins25">-25€</label> 
@@ -126,19 +127,21 @@
             </article>
         </section>
             <section>
-                <form>
-                <ul>
+            <form >
+                <fieldset>
+                    <h3 id="title-form">Une adresse à partager? Remplis ce formulaire.</h3>
+                <ul class="liste">
                     <li>
-                        <label for="name">Nom du restaurant</label>
-                        <input type="text" id="name" placeholder="ex: La fine bouche">
+                        <label for="name" class="li-form">Nom du restaurant</label>
+                        <input type="text" id="name" placeholder="ex: La fine bouche" class="input-formulaire">
                     </li>
                     <li>
-                        <label for="adress">Adresse</label>
-                        <input type="text" id="adress" placeholder="ex: 30 Rue du Hâ, 33000 Bordeaux">
+                        <label for="adress" class="li-form">Adresse</label>
+                        <input type="text" id="adress" placeholder="ex: 30 Rue du Hâ, 33000 Bordeaux" class="input-formulaire">
                     </li>
                     <li>
-                        <label for="specialities-select">Spécialités</label>
-                        <select name="specialities" id="specialities-select">
+                        <label for="specialities-select" class="li-form">Spécialités</label>
+                        <select name="specialities" id="specialities-select" class="input-formulaire">
                             <option value="">Veuillez choisir une spécialité</option>
                             <option value="terroir-français">Terroir français</option>
                             <option value="cuisine-italienne">Cuisine italienne</option>
@@ -148,8 +151,8 @@
                         </select>
                     </li>
                     <li>
-                        <label for="price-select">Fourchette de prix</label>
-                        <select name="price" id="price-select">
+                        <label for="price-select" class="li-form">Fourchette de prix</label>
+                        <select name="price" id="price-select" class="input-formulaire">
                             <option value="">Fourchette de prix</option>
                             <option value="moins25">-25€</option>   
                             <option value="entre25-50">25€-50€</option>   
@@ -157,16 +160,16 @@
                         </select>
                     </li>
                     <li>
-                        <label for="hour-open">Horaires d'ouverture</label>
-                        <select name="hour" id="hour-open">
+                        <label for="hour-open" class="li-form">Horaires d'ouverture</label>
+                        <select name="hour" id="hour-open" class="input-formulaire">
                             <option value="">Veuillez choisir votre plage horaire</option>
                             <option value="noon">Midi</option>   
                             <option value="evening">Soir</option> 
                         </select>
                     </li>
                     <li>
-                        <label for="rating-select">Note</label>
-                        <select name="rating" id="rating-select">
+                        <label for="rating-select" class="li-form">Note</label>
+                        <select name="rating" id="rating-select" class="input-formulaire">
                             <option value="">Veuillez choisir une note</option>
                             <option value="four-love">❤️❤️❤️❤️</option>   
                             <option value="three-love">❤️❤️❤️</option> 
@@ -175,16 +178,17 @@
                         </select>
                     </li>
                     <li>
-                        <label for="name-restaurant">URL du site</label>
-                        <input type="text" id="name-restaurant">
+                        <label for="name-restaurant" class="li-form">URL du site</label>
+                        <input type="text" id="name-restaurant" class="input-formulaire">
                     </li>
                     <li>
-                        <label for="adress-picture">URL de la photo</label>
-                        <input type="text" id="adress-picture">
+                        <label for="adress-picture" class="li-form">URL de la photo</label>
+                        <input type="text" id="adress-picture" class="input-formulaire">
                     </li>
                 </ul>
                 <button id="validate-form">Valider</button>
-                </form>
+                </fieldset>
+            </form>
             </section>
         <button><a>Retour en haut</a></button>    
     </main>
