@@ -1,15 +1,17 @@
-*{
-margin: 0;
-padding: 0;
-/* outline: solid 1px red; */
-}
-
-:root{
+:root {
     --primary-color: #125b89;
     --secondary-color: #FFF6EC;
     --accent-color: #D0E7F6;
+    --title-size: 3rem;
+    --subtitle-size: 1.8rem;
+    --pargaraph-size: 1.3rem;
 }
 
+*{
+margin: 0;
+padding: 0;
+outline: solid 1px red;
+}
 
 .card-restaurant{
     border: solid 3px var(--primary-color);
@@ -46,4 +48,96 @@ padding: 0;
     color: white;
     text-align: center;
 }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: solid 0.3rem var(--primary-color);
+    border-radius: 2rem;
+    width: 80%;
+    padding: 0 3vh 0 3vh;
+    background-color: var(--accent-color);
+}
+
+#filter-restaurants {
+    background-color: var(--secondary-color);
+    width: 80%;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+summary {
+    text-align: center;
+    font-size: var(--subtitle-size);
+    list-style: none;
+    background-color: var(--primary-color);
+
+}
+
+.title-filtre {
+    margin: 1.5rem 0 0.7rem 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: var(--subtitle-size);
+    background-color: #125b89;
+    color: var(--secondary-color);
+    border-radius: 5rem;
+}
+
+#title-form {
+    margin: 1rem 0 3rem 0;
+    text-align: center;
+    font-size: var(--subtitle-size);
+}
+
+.li-form {
+    display: inline-block;
+    margin: 0.3rem 5rem 0.3rem 0.3rem;
+}
+
+li {
+    list-style: none;
+    font-size: var(--pargaraph-size);
+}
+
+.input-formulaire {
+    width: 98%;
+    height: var(--pargaraph-size);
+    background-color: var(--secondary-color);
+}
+
+#validate-filter {
+    margin: 2rem 0;
+    padding: 5% 10%;
+    border-style: none;
+    border-radius: 5rem;
+    font-size: var(--pargaraph-size);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#validate-form {
+    margin: 1.5rem 0;
+    padding: 5% 10%;
+    border-style: none;
+    border-radius: 5rem;
+    font-size: var(--pargaraph-size);
+    background-color: var(--secondary-color);
+    
+}
+
 

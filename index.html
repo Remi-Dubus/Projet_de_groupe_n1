@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Crousti Eats | référencement des restaurants bordelais</title>
+        
+    <meta charset="UTF-8">
+    <meta http-esquiv=-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="160carac" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Crousti Eats</h1>
+        <img src=" " alt="">
+        <nav id="top3">
+            <h2>Top 3 des meilleures adresses bordelaises</h2>
+            <section>
+                <article class="restaurant1-3">
+                    <img src="" alt="">
+                    <p></p>
+                </article>
+                <article id="restaurant2">
+                    <img src="" alt="">
+                    <p></p>
+                </article>
+                <article class="restaurant1-3">
+                    <img src="" alt="">
+                    <p></p>
+                </article>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <details>
+            <summary>Filtres</summary>
+                
+                <form >
+                <fieldset id="filter-restaurants">
+                    <h3 class="title-filtre">Spécialités</h3>
+                    <ul class="liste">
+                    <li>
+                        <input type="radio" id="radio-français" name="filter-radio" value="fr">
+                        <label for="radio-français">Terroir français</label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-italienne" name="filter-radio" value="it">
+                        <label for="radio-italienne">Cuisine italienne</label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-chinoise" name="filter-radio" value="ch">
+                        <label for="radio-chinoise">Cuisine chinoise</label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-indienne" name="filter-radio" value="in">
+                        <label for="radio-indienne">Cuisine Indienne</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-veggie" name="filter-radio" value="ve">
+                        <label for="radio-veggie">Cuisine veggie</label>
+                    </li>
+                </ul>
+                <h3 class="title-filtre">Notes</h3>
+                <ul class="liste">
+                    <li>
+                        <input type="radio" id="radio-4love" name="filter-radio" value="4love">
+                        <label for="radio-4love">❤️❤️❤️❤️</label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-3love" name="filter-radio" value="3love">
+                        <label for="radio-3love">❤️❤️❤️</label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-2love" name="filter-radio" value="2love">
+                        <label for="radio-2love">❤️❤️</label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-1love" name="filter-radio" value="1love">
+                        <label for="radio-1love">❤️</label> 
+                    </li>
+                </ul>
+                <h3 class="title-filtre">Heures d'ouverture</h3>
+                <ul class="liste">
+                    <li>
+                        <input type="radio" id="radio-midi" name="filter-radio" value="midi">
+                        <label for="radio-midi">Midi</label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-soir" name="filter-radio" value="soir">
+                        <label for="radio-soir">Soir</label> 
+                    </li>
+                </ul>
+                <h3 class="title-filtre">Fourchette de prix</h3>
+                <ul class="liste">
+                    <li>
+                        <input type="radio" id="radio-moins25" name="filter-radio" value="25">
+                        <label for="radio-moins25">-25€</label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-25-50" name="filter-radio" value="25-50">
+                        <label for="radio-25-50">25€-50€</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-plus50" name="filter-radio" value="50">
+                        <label for="radio-plus50">+50€</label>
+                    </li>
+                </ul>
+                <button id="validate-filter">Valider</button>
+            </fieldset>
+            </form>
+            </details>
+            <section class="cards">
+                <article class="card-restaurant">
+                    <img src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="assiette de sushis" class="picture-restaurant">
+                    <ul class="informations-restaurant">
+                        <li class="card-name">Sakura San</li>
+                        <li class="card-adress">Adresse : Bordeaux</li>
+                        <li class="card-specialities">Spécialités : Asiatique</li>
+                        <li class="card-hour">Heures d'ouvertures : midi</li>
+                        <li class="card-price">Fourchette de prix : 25€ - 50€</li>
+                        <li class="card-rating">Note : ❤️❤️❤️</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+            <section>
+            <form >
+                <fieldset>
+                    <h3 id="title-form">Une adresse à partager? Remplis ce formulaire.</h3>
+                <ul class="liste">
+                    <li>
+                        <label for="name" class="li-form">Nom du restaurant</label>
+                        <input type="text" id="name" placeholder="ex: La fine bouche" class="input-formulaire">
+                    </li>
+                    <li>
+                        <label for="adress" class="li-form">Adresse</label>
+                        <input type="text" id="adress" placeholder="ex: 30 Rue du Hâ, 33000 Bordeaux" class="input-formulaire">
+                    </li>
+                    <li>
+                        <label for="specialities-select" class="li-form">Spécialités</label>
+                        <select name="specialities" id="specialities-select" class="input-formulaire">
+                            <option value="">Veuillez choisir une spécialité</option>
+                            <option value="terroir-français">Terroir français</option>
+                            <option value="cuisine-italienne">Cuisine italienne</option>
+                            <option value="cuisine-chinoise">Cuisine chinoise</option>
+                            <option value="cuisine-indienne">Cuisine indienne</option>
+                            <option value="cuisine-veggie">Cuisine veggie</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="price-select" class="li-form">Fourchette de prix</label>
+                        <select name="price" id="price-select" class="input-formulaire">
+                            <option value="">Fourchette de prix</option>
+                            <option value="moins25">-25€</option>   
+                            <option value="entre25-50">25€-50€</option>   
+                            <option value="plus50">+50€</option>   
+                        </select>
+                    </li>
+                    <li>
+                        <label for="hour-open" class="li-form">Horaires d'ouverture</label>
+                        <select name="hour" id="hour-open" class="input-formulaire">
+                            <option value="">Veuillez choisir votre plage horaire</option>
+                            <option value="noon">Midi</option>   
+                            <option value="evening">Soir</option> 
+                        </select>
+                    </li>
+                    <li>
+                        <label for="rating-select" class="li-form">Note</label>
+                        <select name="rating" id="rating-select" class="input-formulaire">
+                            <option value="">Veuillez choisir une note</option>
+                            <option value="four-love">❤️❤️❤️❤️</option>   
+                            <option value="three-love">❤️❤️❤️</option> 
+                            <option value="two-love">❤️❤️</option> 
+                            <option value="one-love">❤️</option> 
+                        </select>
+                    </li>
+                    <li>
+                        <label for="name-restaurant" class="li-form">URL du site</label>
+                        <input type="text" id="name-restaurant" class="input-formulaire">
+                    </li>
+                    <li>
+                        <label for="adress-picture" class="li-form">URL de la photo</label>
+                        <input type="text" id="adress-picture" class="input-formulaire">
+                    </li>
+                </ul>
+                <button id="validate-form">Valider</button>
+                </fieldset>
+            </form>
+            </section>
+        <button><a>Retour en haut</a></button>    
+    </main>
+    
+    <footer>
+        <span>Team des semi-croustillant</span>
+        <span>Image by <a>Pexel</a></span>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
