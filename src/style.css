@@ -10,7 +10,7 @@
 *{
 margin: 0;
 padding: 0;
-/* outline: solid 1px red; */
+outline: solid 1px red;
 }
 
 details {
@@ -20,6 +20,43 @@ details {
     margin: 0 4%;
     margin-bottom: 50%;
     border-radius: 2rem;
+}
+
+.card-restaurant{
+    border: solid 3px var(--primary-color);
+    display: flex;
+    border-radius: 2em;
+    padding: 0.5em;
+    margin: 1em auto;
+    gap: 1.75em;
+    align-items: center; 
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    background-color: var(--secondary-color);
+}
+
+.card-restaurant ul{
+    display:flex;
+    gap:0.25em;
+}
+
+.informations-restaurant{
+    display:flex;
+    flex-direction: column;
+}
+
+.picture-restaurant{
+    border-radius: 4em;
+    width: 40%;
+}
+
+.card-name{
+    margin: 0 0.5em 1em 0.5em;
+    border-radius: 0.5em;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
 }
 
 form {
