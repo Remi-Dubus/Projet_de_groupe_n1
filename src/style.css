@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #125b89;
-    --secondary-color: #FFF6EC;
-    --accent-color: #D0E7F6;
-    --title-size: 3rem;
-    --subtitle-size: 1.8rem;
-    --pargaraph-size: 1.3rem;
+  --primary-color: #125b89;
+  --secondary-color: #fff6ec;
+  --accent-color: #d0e7f6;
+  --title-size: 3rem;
+  --subtitle-size: 1.8rem;
+  --pargaraph-size: 1.3rem;
 }
 
 @font-face {
@@ -106,7 +106,35 @@ outline: solid 1px red;
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    gap: 1em;
+
+    margin: 2em 2em;
+  }
+  #top3 h2 {
+    font-size: 2em;
+    width: 25%;
+    margin: 0em 1em;
+  }
+  #top3 section {
+    display: flex;
+    flex-direction: row;
+  }
+  #top3 img {
+    margin: 0.2em 0em;
+    width: 45%;
+  }
+  #top3 article {
+    margin: 1em 1em;
+  }
+  #restaurant2 {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+  }
+  .restaurant1-3 {
     gap: 1em;
 
     margin: 2em 2em;
@@ -174,8 +202,8 @@ fieldset {
 }
 
 #filter-restaurants {
-    background-color: var(--secondary-color);
-    width: 80%;
+  background-color: var(--secondary-color);
+  width: 80%;
 }
 
 summary {
@@ -258,9 +286,9 @@ summary:hover {
 }
 
 #title-form {
-    margin: 1rem 0 3rem 0;
-    text-align: center;
-    font-size: var(--subtitle-size);
+  margin: 1rem 0 3rem 0;
+  text-align: center;
+  font-size: var(--subtitle-size);
 }
 
 .ul-form {
