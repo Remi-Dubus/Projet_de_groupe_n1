@@ -6,6 +6,7 @@
   --subtitle-size: 1.8rem;
   --pargaraph-size: 1.3rem;
 }
+
 @font-face {
   font-family: "QuickSand";
   src: url("../public/Quicksand/Quicksand-VariableFont_wght.ttf");
@@ -15,10 +16,18 @@
   src: url("../public/Mulish/Mulish-VariableFont_wght.ttf");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: solid 1px red;
+*{
+margin: 0;
+padding: 0;
+outline: solid 1px red;
+}
+
+/* Corp du site */
+
+#main-top {
+    @media screen and (min-width: 992px) {
+        display: flex;
+    }
 }
 
 /* HEADER SECTION TOP 3 */
@@ -97,7 +106,35 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    gap: 1em;
+
+    margin: 2em 2em;
+  }
+  #top3 h2 {
+    font-size: 2em;
+    width: 25%;
+    margin: 0em 1em;
+  }
+  #top3 section {
+    display: flex;
+    flex-direction: row;
+  }
+  #top3 img {
+    margin: 0.2em 0em;
+    width: 45%;
+  }
+  #top3 article {
+    margin: 1em 1em;
+  }
+  #restaurant2 {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+  }
+  .restaurant1-3 {
     gap: 1em;
 
     margin: 2em 2em;
@@ -131,24 +168,37 @@
     margin: 0em 0.2em;
   }
 }
-/* END OF HEADER */
+
+/* Filtrer un restaurant */
+
+details {
+    border: solid 0.3rem var(--primary-color);
+    width: 90%;
+    background-color: var(--secondary-color);
+    margin: 0 4%;
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: 992px){
+        width: 50%;
+        height: 90%;
+        margin: 5% 1%;
+    }
+}
 
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;    
 }
 
 fieldset {
-  display: flex;
-  flex-direction: column;
-  border: solid 0.3rem var(--primary-color);
-  border-radius: 2rem;
-  width: 80%;
-  padding: 0 3vh 0 3vh;
-  background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    list-style: none;
 }
 
 #filter-restaurants {
@@ -156,27 +206,83 @@ fieldset {
   width: 80%;
 }
 
-.liste {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
 summary {
-  text-align: center;
-  font-size: var(--subtitle-size);
-  list-style: none;
-  background-color: var(--primary-color);
+    text-align: center;
+    font-size: calc(var(--subtitle-size) * 1.2);
+    background-color: var(--primary-color);
+    margin: 2rem 12.5% 2rem 12.5%;
+    padding: 1rem 0;
+    width: 75%;
+    border-radius: 2rem;
+    color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: 992px){
+        margin: 12.5% 12.5% 12.5% 12.5%;
+    }
 }
 
-.title-filtre {
-  margin: 1.5rem 0 0.7rem 0;
-  padding: 1rem 0;
-  text-align: center;
-  font-size: var(--subtitle-size);
-  background-color: #125b89;
-  color: var(--secondary-color);
-  border-radius: 5rem;
+summary:hover {
+    transform: scale(1.1);
+}
+
+
+.ul-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.title-filter {
+    margin: 1.5rem 0 0.7rem 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: calc(var(--subtitle-size) * 0.8);
+    background-color: #125b89;
+    color: var(--secondary-color);
+    border-radius: 5rem;    
+}
+
+#validate-filter {
+    margin: 3rem 25% 3rem 20%;
+    padding: 7% 5%;
+    width: 60%;
+    border-style: none;
+    border-radius: 1rem;
+    font-size: var(--pargaraph-size);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: 992px){
+        margin: 1.5rem 30% 1.5rem 30%;
+        width: 40%;
+        padding: 1rem 0;
+    }
+}
+
+#validate-filter:hover {
+    transform: scale(1.1);
+}
+
+.li-form {
+    list-style: none;
+    font-size: var(--pargaraph-size);
+}
+
+/* Ajouter un restaurant */
+
+#add-restaurant {
+    width: 80%;
+    margin: 5% 5%;
+    border: solid 0.3rem var(--primary-color);
+    border-radius: 1rem;
+    background-color: var(--accent-color);
+    
+    @media screen and (min-width: 992px){
+        width: 91%;
+        margin: 5% 1%;
+    }    
 }
 
 #title-form {
@@ -185,39 +291,57 @@ summary {
   font-size: var(--subtitle-size);
 }
 
-.li-form {
-  display: inline-block;
-  margin: 0.3rem 5rem 0.3rem 0.3rem;
+.ul-form {
+    @media screen and (min-width: 992px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }    
 }
 
-li {
-  list-style: none;
-  font-size: var(--pargaraph-size);
+.ul-form > li {
+    @media screen and (min-width: 992px) {
+        width: 33%;
+    }
+}
+.title-form {
+    display: inline-block;
+    margin: 0.3rem 5rem 0.3rem 0.3rem;
 }
 
 .input-formulaire {
-  width: 98%;
-  height: var(--pargaraph-size);
-  background-color: var(--secondary-color);
-}
-
-#validate-filter {
-  margin: 2rem 0;
-  padding: 5% 10%;
-  border-style: none;
-  border-radius: 5rem;
-  font-size: var(--pargaraph-size);
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+    width: 90%;
+    height: var(--pargaraph-size);
+    background-color: var(--secondary-color);
 }
 
 #validate-form {
-  margin: 1.5rem 0;
-  padding: 5% 10%;
-  border-style: none;
-  border-radius: 5rem;
-  font-size: var(--pargaraph-size);
-  background-color: var(--secondary-color);
+    margin: 1.5rem 0 1.5rem 25%;
+    padding: 5% 3%;
+    width: 50%;
+    border-style: none;
+    border: solid 0.3rem var(--primary-color);
+    border-radius: 1rem;
+    font-size: var(--pargaraph-size);
+    background-color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+    
+    @media screen and (min-width: 992px){
+        margin: 1.5rem 0 1.5rem 0;
+        width: 20%;
+        padding: 1rem 0;
+    }
+}
+
+#validate-form:hover {
+    transform: scale(1.1);
+}
+
+/* Cartes et descriptions des restaurants */
+
+.cards {
+	display: flex;
+	flex-direction: column;
 }
 
 .card-restaurant {
@@ -242,6 +366,8 @@ li {
 .informations-restaurant {
   display: flex;
   flex-direction: column;
+  gap: 8%;
+	width: 100%;
 }
 
 .picture-restaurant {
@@ -255,4 +381,14 @@ li {
   background-color: var(--primary-color);
   color: white;
   text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1em;
+		margin: 0 2em 0 2em;
+		align-items: stretch;
+	}
 }
