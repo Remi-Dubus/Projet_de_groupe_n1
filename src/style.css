@@ -13,23 +13,27 @@ padding: 0;
 /* outline: solid 1px red; */
 }
 
+details {
+    border: solid 0.3rem var(--primary-color);
+    width: 90%;
+    background-color: var(--secondary-color);
+    margin: 0 4%;
+    margin-bottom: 50%;
+    border-radius: 2rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3%;
-    
+    padding: 3%;    
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
-    border: solid 0.3rem var(--primary-color);
-    border-radius: 2rem;
-    width: 80%;
-    padding: 0 3vh 0 3vh;
-    background-color: var(--accent-color);
+    border: none;
 }
 
 #filter-restaurants {
@@ -46,19 +50,29 @@ fieldset {
 summary {
     text-align: center;
     font-size: var(--subtitle-size);
-    list-style: none;
     background-color: var(--primary-color);
-
+    margin: 2rem 1rem 2rem 1rem;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    color: var(--secondary-color);
 }
 
 .title-filtre {
     margin: 1.5rem 0 0.7rem 0;
     padding: 1rem 0;
     text-align: center;
-    font-size: var(--subtitle-size);
+    font-size: calc(var(--pargaraph-size) * 1.2);
     background-color: #125b89;
     color: var(--secondary-color);
-    border-radius: 5rem;
+    border-radius: 5rem;    
+}
+
+#add-restaurant {
+    width: 80%;
+    margin: 5% 5%;
+    border: solid 0.3rem var(--primary-color);
+    border-radius: 1rem;
+    background-color: var(--accent-color);
 }
 
 #title-form {
@@ -78,29 +92,37 @@ li {
 }
 
 .input-formulaire {
-    width: 98%;
+    width: 90%;
     height: var(--pargaraph-size);
     background-color: var(--secondary-color);
 }
 
 #validate-filter {
-    margin: 2rem 0;
-    padding: 5% 10%;
+    margin: 3rem 25% 3rem 20%;
+    padding: 10% 5%;
+    width: 60%;
     border-style: none;
-    border-radius: 5rem;
+    border-radius: 1rem;
     font-size: var(--pargaraph-size);
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
 #validate-form {
-    margin: 1.5rem 0;
-    padding: 5% 10%;
+    margin: 1.5rem 0 1.5rem 25%;
+    padding: 1rem 0;
+    width: 50%;
     border-style: none;
-    border-radius: 5rem;
+    border: solid 0.3rem var(--primary-color);
+    border-radius: 1rem;
     font-size: var(--pargaraph-size);
     background-color: var(--secondary-color);
     
+    @media screen and (min-width: 992px){
+        margin: 1.5rem 0 1.5rem 0;
+        width: 20%;
+        padding: 1rem 0;
+    }
 }
 
 
