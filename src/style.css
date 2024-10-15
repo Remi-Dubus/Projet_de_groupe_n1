@@ -13,6 +13,15 @@ padding: 0;
 outline: solid 1px red;
 }
 
+/* Corp du site */
+
+#main-top {
+    @media screen and (min-width: 992px) {
+        display: flex;
+    }
+}
+
+
 /* Filtrer un restaurant */
 
 details {
@@ -20,8 +29,14 @@ details {
     width: 90%;
     background-color: var(--secondary-color);
     margin: 0 4%;
-    margin-bottom: 50%;
     border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: 992px){
+        width: 50%;
+        height: 90%;
+        margin: 5% 1%;
+    }
 }
 
 form {
@@ -44,8 +59,6 @@ fieldset {
     width: 80%;
 }
 
-
-
 summary {
     text-align: center;
     font-size: calc(var(--subtitle-size) * 1.2);
@@ -55,7 +68,17 @@ summary {
     width: 75%;
     border-radius: 2rem;
     color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: 992px){
+        margin: 12.5% 12.5% 12.5% 12.5%;
+    }
 }
+
+summary:hover {
+    transform: scale(1.1);
+}
+
 
 .ul-liste {
     display: flex;
@@ -82,6 +105,17 @@ summary {
     font-size: var(--pargaraph-size);
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: 992px){
+        margin: 1.5rem 30% 1.5rem 30%;
+        width: 40%;
+        padding: 1rem 0;
+    }
+}
+
+#validate-filter:hover {
+    transform: scale(1.1);
 }
 
 .li-form {
@@ -97,6 +131,11 @@ summary {
     border: solid 0.3rem var(--primary-color);
     border-radius: 1rem;
     background-color: var(--accent-color);
+    
+    @media screen and (min-width: 992px){
+        width: 91%;
+        margin: 5% 1%;
+    }    
 }
 
 #title-form {
@@ -105,12 +144,23 @@ summary {
     font-size: var(--subtitle-size);
 }
 
+.ul-form {
+    @media screen and (min-width: 992px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }    
+}
+
+.ul-form > li {
+    @media screen and (min-width: 992px) {
+        width: 33%;
+    }
+}
 .title-form {
     display: inline-block;
     margin: 0.3rem 5rem 0.3rem 0.3rem;
 }
-
-
 
 .input-formulaire {
     width: 90%;
@@ -127,12 +177,17 @@ summary {
     border-radius: 1rem;
     font-size: var(--pargaraph-size);
     background-color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
     
     @media screen and (min-width: 992px){
         margin: 1.5rem 0 1.5rem 0;
         width: 20%;
         padding: 1rem 0;
     }
+}
+
+#validate-form:hover {
+    transform: scale(1.1);
 }
 
 /* Cartes et descriptions des restaurants */
