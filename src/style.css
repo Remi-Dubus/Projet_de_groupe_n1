@@ -21,6 +21,116 @@ outline: solid 1px red;
     }
 }
 
+/* HEADER SECTION TOP 3 */
+
+#top3 {
+  border-radius: 2em;
+
+  margin: 1em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  outline: solid 5px var(--primary-color);
+  color: var(--primary-color);
+}
+#top3 h2 {
+  text-align: center;
+  font-family: "QuickSand";
+}
+#top3 h3 {
+  background-color: var(--secondary-color);
+  outline: solid 2px var(--primary-color);
+  border-radius: 0.3em;
+  font-family: "QuickSand";
+
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+}
+#top3 img {
+  width: 49%;
+  border-radius: 2em;
+  outline: solid 2px var(--primary-color);
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+}
+#top3 p {
+  background-color: var(--secondary-color);
+  outline: solid 2px var(--primary-color);
+  border-radius: 0.3em;
+  font-family: "Mulish";
+
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+}
+
+#top3 article {
+  margin: 1em;
+}
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  width: 49%;
+}
+.restaurant1-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+#restaurant2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1em;
+}
+
+/* MEDIA QUERIES HEADER */
+
+@media screen and (min-width: 992px) {
+  #top3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    margin: 2em 2em;
+  }
+  #top3 h2 {
+    font-size: 2em;
+    width: 25%;
+    margin: 0em 1em;
+  }
+  #top3 section {
+    display: flex;
+    flex-direction: row;
+  }
+  #top3 img {
+    margin: 0.2em 0em;
+    width: 45%;
+  }
+  #top3 article {
+    margin: 1em 1em;
+  }
+  #restaurant2 {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+  }
+  .restaurant1-3 {
+    width: 40%;
+  }
+  .header-text {
+    font-size: 100%;
+    margin: 0em 0.2em;
+  }
+}
 
 /* Filtrer un restaurant */
 
@@ -192,39 +302,39 @@ summary:hover {
 
 /* Cartes et descriptions des restaurants */
 
-.card-restaurant{
-    border: solid 3px var(--primary-color);
-    display: flex;
-    border-radius: 2em;
-    padding: 0.5em;
-    margin: 1em auto;
-    gap: 1.75em;
-    align-items: center; 
-    justify-content: center;
-    width: 80%;
-    height: auto;
-    background-color: var(--secondary-color);
+.card-restaurant {
+  border: solid 3px var(--primary-color);
+  display: flex;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin: 1em auto;
+  gap: 1.75em;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  background-color: var(--secondary-color);
 }
 
-.card-restaurant ul{
-    display:flex;
-    gap:0.25em;
+.card-restaurant ul {
+  display: flex;
+  gap: 0.25em;
 }
 
-.informations-restaurant{
-    display:flex;
-    flex-direction: column;
+.informations-restaurant {
+  display: flex;
+  flex-direction: column;
 }
 
-.picture-restaurant{
-    border-radius: 4em;
-    width: 40%;
+.picture-restaurant {
+  border-radius: 4em;
+  width: 40%;
 }
 
-.card-name{
-    margin: 0 0.5em 1em 0.5em;
-    border-radius: 0.5em;
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
+.card-name {
+  margin: 0 0.5em 1em 0.5em;
+  border-radius: 0.5em;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
 }
