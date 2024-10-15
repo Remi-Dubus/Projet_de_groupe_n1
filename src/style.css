@@ -7,6 +7,15 @@
     --pargaraph-size: 1.3rem;
 }
 
+@font-face {
+  font-family: "QuickSand";
+  src: url("../public/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../public/Mulish/Mulish-VariableFont_wght.ttf");
+}
+
 *{
 margin: 0;
 padding: 0;
@@ -337,4 +346,14 @@ summary:hover {
   background-color: var(--primary-color);
   color: white;
   text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1em;
+		margin: 0 2em 0 2em;
+		align-items: stretch;
+	}
 }
