@@ -311,6 +311,11 @@ summary:hover {
 
 /* Cartes et descriptions des restaurants */
 
+.cards {
+	display: flex;
+	flex-direction: column;
+}
+
 .card-restaurant {
   border: solid 3px var(--primary-color);
   display: flex;
@@ -333,6 +338,8 @@ summary:hover {
 .informations-restaurant {
   display: flex;
   flex-direction: column;
+  gap: 8%;
+	width: 100%;
 }
 
 .picture-restaurant {
