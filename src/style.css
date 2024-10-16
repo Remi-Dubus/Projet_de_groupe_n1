@@ -22,7 +22,7 @@
   outline: solid 1px red;
 }
 
-/* Corp du site */
+/* Corps du site */
 
 #main-top {
   @media screen and (min-width: 992px) {
@@ -356,8 +356,8 @@ summary:hover {
 }
 
 /* .card-restaurant ul {
-  display: flex;
-  gap: 0.25em;
+    display: flex;
+    gap: 0.25em;
 } */
 
 .informations-restaurant {
