@@ -44,6 +44,76 @@ const newRestaurant = [
 		price: "25-50€",
 		rating: "❤️❤️",
 	},
+	{
+		picture:
+			"https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
+		name: "Amore",
+		adresse: "11 place des Grands Hommes",
+		specialities: "cuisine italienne",
+		hour: "Midi",
+		price: "25-50€",
+		rating: "❤️❤️",
+	},
+	{
+		picture:
+			"https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
+		name: "Amore",
+		adresse: "11 place des Grands Hommes",
+		specialities: "cuisine italienne",
+		hour: "Midi",
+		price: "25-50€",
+		rating: "❤️❤️",
+	},
+	{
+		picture:
+			"https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
+		name: "Amore",
+		adresse: "11 place des Grands Hommes",
+		specialities: "cuisine italienne",
+		hour: "Midi",
+		price: "25-50€",
+		rating: "❤️❤️",
+	},
+	{
+		picture:
+			"https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
+		name: "Amore",
+		adresse: "11 place des Grands Hommes",
+		specialities: "cuisine italienne",
+		hour: "Midi",
+		price: "25-50€",
+		rating: "❤️❤️",
+	},
+	{
+		picture:
+			"https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
+		name: "Amore",
+		adresse: "11 place des Grands Hommes",
+		specialities: "cuisine italienne",
+		hour: "Midi",
+		price: "25-50€",
+		rating: "❤️❤️",
+	},
+	{
+		picture:
+			"https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
+		name: "Amore",
+		adresse: "11 place des Grands Hommes",
+		specialities: "cuisine italienne",
+		hour: "Midi",
+		price: "25-50€",
+		rating: "❤️❤️",
+	},
+	{
+		picture:
+			"https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
+		name: "Amore",
+		adresse: "11 place des Grands Hommes",
+		specialities: "cuisine italienne",
+		hour: "Midi",
+		price: "25-50€",
+		rating: "❤️❤️",
+	},
 ];
 
 // fonction qui intégre un nouveau restaurant en dernière position dans le tableau des nouveaux restos
