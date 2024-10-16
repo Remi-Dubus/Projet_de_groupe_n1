@@ -180,3 +180,7 @@ function createCard(restaurant) {
 
 // on crée une boucle pour créer autant de cartes qu'il y a de restos dans le tableau
 newRestaurant.forEach((restaurant) => createCard(restaurant));
+
+
+/* les filtres */
+
