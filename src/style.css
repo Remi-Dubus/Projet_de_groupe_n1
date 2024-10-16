@@ -22,12 +22,28 @@
 	outline: solid 1px red;
 }
 
-/* Corp du site */
+/* Corps du site */
 
 #main-top {
 	@media screen and (min-width: 992px) {
 		display: flex;
 	}
+}
+
+#banniere {
+    border: solid 10px var(--primary-color);
+    border-right: 6px var(--primary-color);
+    border-left: 6px var(--primary-color);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    object-fit: cover;
+}
+
+#image-banniere {
+    width: 1640px;
+    height: 150px;
+    object-fit: cover; 
 }
 
 /* HEADER SECTION TOP 3 */
@@ -335,8 +351,8 @@ summary:hover {
 }
 
 /* .card-restaurant ul {
-  display: flex;
-  gap: 0.25em;
+    display: flex;
+    gap: 0.25em;
 } */
 
 .informations-restaurant {
@@ -365,5 +381,23 @@ summary:hover {
 		grid-template-columns: 1fr 1fr;
 		margin: 0 auto 0 auto;
 		align-items: stretch;
+	}
+}
 
+/* footer */
+
+footer {
+	background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em 0;
+	height: 10px;
+
+}
+
+footer span a {
+	text-decoration: none;
+	color: var(--secondary-color);
 }
