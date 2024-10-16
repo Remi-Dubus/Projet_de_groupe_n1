@@ -15,7 +15,10 @@
   <body>
     <header>
         <h1>Crousti Eats</h1>
-        <img src=" " alt="" />
+        <section id ="banniere">
+
+            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"   alt="assiette de crudités" id="image-banniere">
+        </section>
         <nav id="top3">
         <h2>Top 3 des meilleures adresses bordelaises</h2>
         <section>
@@ -25,11 +28,9 @@
                 alt="photo de pignon de poulet"
             />
             <div class="header-text">
-                <h3>nom du restaurant</h3>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus, veritatis.
-                </p>
+                <h3>sakura san</h3>
+                <p class="top3-adresse">1 rue paul robert</p>
+                <p class="top3-rating">❤️❤️❤️❤️</p>
             </div>
             </article>
             <article id="restaurant2">
@@ -155,7 +156,7 @@
             </section>
         </section>
             <section>
-            <form id="add-restaurant">
+            <form id="add-restaurant" method="post">
                 <fieldset class="ul-form">
                     <h3 id="title-form">Une adresse à partager? Remplis ce formulaire.</h3>
                 <ul class="ul-form">
@@ -171,38 +172,38 @@
                         <label for="specialities-select" class="title-form">Spécialités</label>
                         <select name="specialities" id="specialities-select" class="input-formulaire">
                             <option value="">Veuillez choisir une spécialité</option>
-                            <option value="terroir-français">Terroir français</option>
-                            <option value="cuisine-italienne">Cuisine italienne</option>
-                            <option value="cuisine-chinoise">Cuisine chinoise</option>
-                            <option value="cuisine-indienne">Cuisine indienne</option>
-                            <option value="cuisine-veggie">Cuisine veggie</option>
+                            <option value="Terroir français">Terroir français</option>
+                            <option value="Cuisine italienne">Cuisine italienne</option>
+                            <option value="Cuisine chinoise">Cuisine chinoise</option>
+                            <option value="Cuisine indienne">Cuisine indienne</option>
+                            <option value="Cuisine veggie">Cuisine veggie</option>
                         </select>
                     </li>
                     <li class="li-form">
                         <label for="price-select" class="title-form">Fourchette de prix</label>
                         <select name="price" id="price-select" class="input-formulaire">
                             <option value="">Fourchette de prix</option>
-                            <option value="moins25">-25€</option>   
-                            <option value="entre25-50">25€-50€</option>   
-                            <option value="plus50">+50€</option>   
+                            <option value="-25€">-25€</option>   
+                            <option value="25€-50€">25€-50€</option>   
+                            <option value="+50€">+50€</option>   
                         </select>
                     </li>
                     <li class="li-form">
                         <label for="hour-open" class="title-form">Horaires d'ouverture</label>
                         <select name="hour" id="hour-open" class="input-formulaire">
                             <option value="">Veuillez choisir votre plage horaire</option>
-                            <option value="noon">Midi</option>   
-                            <option value="evening">Soir</option> 
+                            <option value="Midi">Midi</option>   
+                            <option value="Soir">Soir</option> 
                         </select>
                     </li>
                     <li class="li-form">
                         <label for="rating-select" class="title-form">Note</label>
                         <select name="rating" id="rating-select" class="input-formulaire">
                             <option value="">Veuillez choisir une note</option>
-                            <option value="four-love">❤️❤️❤️❤️</option>   
-                            <option value="three-love">❤️❤️❤️</option> 
-                            <option value="two-love">❤️❤️</option> 
-                            <option value="one-love">❤️</option> 
+                            <option value="❤️❤️❤️❤️">❤️❤️❤️❤️</option>   
+                            <option value="❤️❤️❤️">❤️❤️❤️</option> 
+                            <option value="❤️❤️">❤️❤️</option> 
+                            <option value="❤️">❤️</option> 
                         </select>
                     </li>
                     <li class="li-form">
@@ -214,7 +215,7 @@
                         <input type="text" id="adress-picture" class="input-formulaire">
                     </li>
                 </ul>
-                <button id="validate-form">Valider</button>
+                <button id="validate-form" type="submit">Valider</button>
                 </fieldset>
             </form>
             </section>
