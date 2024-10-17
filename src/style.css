@@ -33,7 +33,7 @@
 /* Bannière */
 
 #banniere {
-	border: solid 50px var(--primary-color);
+	border: solid 35px var(--primary-color);
 	border-right: 6px var(--primary-color);
 	border-left: 6px var(--primary-color);
 
@@ -44,8 +44,8 @@
 }
 
 #image-banniere {
-	width: 1640px;
-	height: 150px;
+	width: 100%;
+	height: 6em;
 	object-fit: cover;
 }
 
@@ -80,15 +80,17 @@
 	width: 49%;
 	border-radius: 2em;
 	outline: solid 2px var(--primary-color);
+
 	-webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 	-moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 	box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 }
-#top3 p {
+#top3 ul {
 	background-color: var(--secondary-color);
 	outline: solid 2px var(--primary-color);
 	border-radius: 0.3em;
 	font-family: "Mulish";
+	list-style: none;
 
 	-webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 	-moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
@@ -102,7 +104,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-
+	text-align: center;
 	width: 49%;
 }
 .restaurant1-3 {
@@ -206,7 +208,7 @@ summary {
 	text-align: center;
 	font-size: calc(var(--subtitle-size) * 1.2);
 	background-color: var(--primary-color);
-	margin: 2rem 12.5% 2rem 12.5%;
+	margin: 2rem 12.5% 1rem 12.5%;
 	padding: 1rem 0;
 	width: 75%;
 	border-radius: 2rem;
@@ -271,8 +273,9 @@ summary:hover {
 	width: 80%;
 	margin: 5% 5%;
 	border: solid 0.3rem var(--primary-color);
-	border-radius: 1rem;
+	border-radius: 2rem;
 	background-color: var(--accent-color);
+	font-family: "Mulish";
 
 	@media screen and (min-width: 992px) {
 		width: 91%;
@@ -397,12 +400,23 @@ summary:hover {
 	}
 
 	.informations-restaurant {
-		font-size: 24px;
+		font-size: 18px;
 	}
 
 	.card-name {
-		font-size: 26px;
+		font-size: 24px;
 	}
+}
+
+/* bouton haut de page */
+
+.btnHautdePage {
+	margin: 1.5rem 0 0.7rem 0;
+	padding: 1% 1%;
+	text-align: center;
+	font-size: calc(var(--subtitle-size) * 0.8);
+	background-color: #125b89;
+	color: var(--secondary-color);
 }
 
 /* footer */

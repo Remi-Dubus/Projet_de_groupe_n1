@@ -211,10 +211,26 @@ form.addEventListener("submit", (e) => {
 	createCard(newRestaurant.pop());
 });
 
+/* bouton Haut de page */
+
+const btnHautdePage = document.querySelector(".btnHautdePage");
+console.log(btnHautdePage);
+
+btnHautdePage.addEventListener("click", () => {
+	window.scrollTo({
+		top: 0,
+		left: 0,
+		behavior: "smooth",
+	});
+});
+
 /* les filtres /
 
-/ destructuration du tableau /
-const { picture, name, adresse, specialities, hour, price, rating } = newRestaurant;
+let filterArray = [];
+
+function filter(arr) {
+/* destructuration du tableau /
+const { picture, name, adresse, specialities, hour, price, rating } = arr;
 
 / recuperer le formulaire /
 const formulaireFilter = document.querySelector("#filter-form");
@@ -224,18 +240,24 @@ formulaireFilter.addEventListener("submit", function (event) {
     event.preventDefault();
     console.log(event);
 
-
     / boucle verifiant la valeur selectionée /
     for (let i = 1; i < event.target.length; i++) {
-        let selectedRestaurant = null;
         if (event.target[i].checked === true) {
-            selectedRestaurant = event.target[i].value;
-            / console.log(selectedRestaurant); /
-            / boucle comparant la valeur au tableau */
-//             for (let j = 0; j < newRestaurant.length; j++) {
-//                 let arrayRestaurant = newRestaurant[j];
-//                     return console.log(newRestaurant.filter((restaurant) => restaurant.specialities === event.target[i]))
-//             }
-//         }
-//     }
-// });
+            let valueRestaurant = event.target[i].value
+            console.log(valueRestaurant)
+            for (let j = 0; j < arr.length; j++) {
+                if (event.target[i].value === arr[j].specialities) {
+                console.log(arr[j].specialities)
+
+                / filterArray.push(arr[j]);
+                console.log(filterArray);  */
+			}
+		} 
+	}
+}
+})}
+
+
+
+
+// filter(newRestaurant)
