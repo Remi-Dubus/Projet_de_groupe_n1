@@ -14,15 +14,12 @@
 
   <body>
     <header>
-      <h1>Crousti Eats</h1>
-      <section id="banniere">
-        <img
-          src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="assiette de crudités"
-          id="image-banniere"
-        />
-      </section>
-      <nav id="top3">
+        <h1>Crousti Eats</h1>
+        <section id ="banniere">
+
+            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"   alt="assiette de crudités" id="image-banniere">
+        </section>
+        <nav id="top3">
         <h2>Top 3 des meilleures adresses bordelaises</h2>
         <section>
           <article class="restaurant1-3">
@@ -31,11 +28,12 @@
               alt="photo de pignon de poulet"
             />
             <div class="header-text">
-              <h3>nom du restaurant</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus, veritatis.
-              </p>
+                <h3>sakura san</h3>
+                <ul>
+                    <li>1 rue paul robert</li>
+                    <li>Cuisine italienne</li>
+                    <li>❤️❤️❤️❤️</li>
+                </ul>
             </div>
           </article>
           <article id="restaurant2">
@@ -44,11 +42,12 @@
               alt="Temporaire"
             />
             <div class="header-text">
-              <h3>nom du restaurant</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                illo?
-              </p>
+                <h3>nom du restaurant</h3>
+                <ul>
+                    <li>1 rue paul robert</li>
+                    <li>Cuisine italienne</li>
+                    <li>❤️❤️❤️❤️</li>
+                </ul>
             </div>
           </article>
           <article class="restaurant1-3">
@@ -57,11 +56,12 @@
               alt="Temporaire"
             />
             <div class="header-text">
-              <h3>nom du restaurant</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui,
-                possimus?
-              </p>
+                <h3>nom du restaurant</h3>
+                <ul>
+                    <li>1 rue paul robert</li>
+                    <li>Cuisine italienne</li>
+                    <li>❤️❤️❤️❤️</li>
+                </ul>
             </div>
           </article>
         </section>
@@ -214,129 +214,87 @@
               </ul>
               <button id="validate-filter">Valider</button>
             </fieldset>
-          </form>
-        </details>
-        <section class="cards">
-          <article class="card-restaurant">
-            <img
-              src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="assiette de sushis"
-              class="picture-restaurant"
-            />
-            <ul class="informations-restaurant">
-              <li class="list-informations">Dragon doré</li>
-              <li class="list-informations">9 rue Paul Louis Lande</li>
-              <li class="list-informations">>Cuisine asiatique</li>
-              <li class="list-informations">Soir</li>
-              <li class="list-informations">-25€</li>
-              <li class="list-informations">❤️❤️❤️❤️</li>
-            </ul>
-          </article>
+            </form>
+            </details>
+            <section class="cards">
+                <article class="card-restaurant">
+                    <img src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="assiette de sushis" class="picture-restaurant">
+                    <ul class="informations-restaurant" >
+                        <li class="list-informations">Dragon doré</li>
+                        <li class="list-informations">9 rue Paul Louis Lande</li>
+                        <li class="list-informations">Cuisine asiatique</li>
+                        <li class="list-informations">Soir</li>
+                        <li class="list-informations">-25€</li>
+                        <li class="list-informations">❤️❤️❤️❤️</li>
+                    </ul>
+                </article>
+            </section>
         </section>
-      </section>
-      <section>
-        <form id="add-restaurant">
-          <fieldset class="ul-form">
-            <h3 id="title-form">
-              Une adresse à partager? Remplis ce formulaire.
-            </h3>
-            <ul class="ul-form">
-              <li class="li-form">
-                <label for="name" class="title-form">Nom du restaurant</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="ex: La fine bouche"
-                  class="input-formulaire"
-                />
-              </li>
-              <li class="li-form">
-                <label for="adress" class="title-form">Adresse</label>
-                <input
-                  type="text"
-                  id="adress"
-                  placeholder="ex: 30 Rue du Hâ, 33000 Bordeaux"
-                  class="input-formulaire"
-                />
-              </li>
-              <li class="li-form">
-                <label for="specialities-select" class="title-form"
-                  >Spécialités</label
-                >
-                <select
-                  name="specialities"
-                  id="specialities-select"
-                  class="input-formulaire"
-                >
-                  <option value="">Veuillez choisir une spécialité</option>
-                  <option value="terroir-français">Terroir français</option>
-                  <option value="cuisine-italienne">Cuisine italienne</option>
-                  <option value="cuisine-chinoise">Cuisine chinoise</option>
-                  <option value="cuisine-indienne">Cuisine indienne</option>
-                  <option value="cuisine-veggie">Cuisine veggie</option>
-                </select>
-              </li>
-              <li class="li-form">
-                <label for="price-select" class="title-form"
-                  >Fourchette de prix</label
-                >
-                <select name="price" id="price-select" class="input-formulaire">
-                  <option value="">Fourchette de prix</option>
-                  <option value="moins25">-25€</option>
-                  <option value="entre25-50">25€-50€</option>
-                  <option value="plus50">+50€</option>
-                </select>
-              </li>
-              <li class="li-form">
-                <label for="hour-open" class="title-form"
-                  >Horaires d'ouverture</label
-                >
-                <select name="hour" id="hour-open" class="input-formulaire">
-                  <option value="">Veuillez choisir votre plage horaire</option>
-                  <option value="noon">Midi</option>
-                  <option value="evening">Soir</option>
-                </select>
-              </li>
-              <li class="li-form">
-                <label for="rating-select" class="title-form">Note</label>
-                <select
-                  name="rating"
-                  id="rating-select"
-                  class="input-formulaire"
-                >
-                  <option value="">Veuillez choisir une note</option>
-                  <option value="four-love">❤️❤️❤️❤️</option>
-                  <option value="three-love">❤️❤️❤️</option>
-                  <option value="two-love">❤️❤️</option>
-                  <option value="one-love">❤️</option>
-                </select>
-              </li>
-              <li class="li-form">
-                <label for="name-restaurant" class="title-form"
-                  >URL du site</label
-                >
-                <input
-                  type="text"
-                  id="name-restaurant"
-                  class="input-formulaire"
-                />
-              </li>
-              <li class="li-form">
-                <label for="adress-picture" class="title-form"
-                  >URL de la photo</label
-                >
-                <input
-                  type="text"
-                  id="adress-picture"
-                  class="input-formulaire"
-                />
-              </li>
-            </ul>
-            <button type="submit" id="validate-form">Valider</button>
-          </fieldset>
-        </form>
-      </section>
-      <button><a>Retour en haut</a></button>
+            <section>
+            <form id="add-restaurant" method="post">
+                <fieldset class="ul-form">
+                    <h3 id="title-form">Une adresse à partager ? Veuillez remplis ce formulaire.</h3>
+                <ul class="ul-form">
+                    <li class="li-form">
+                        <label for="name" class="title-form">Nom du restaurant</label>
+                        <input type="text" id="name" placeholder="ex: La fine bouche" class="input-formulaire">
+                    </li>
+                    <li class="li-form">
+                        <label for="adress" class="title-form">Adresse</label>
+                        <input type="text" id="adress" placeholder="ex: 30 Rue du Hâ, 33000 Bordeaux" class="input-formulaire">
+                    </li>
+                    <li class="li-form">
+                        <label for="specialities-select" class="title-form">Spécialités</label>
+                        <select name="specialities" id="specialities-select" class="input-formulaire">
+                            <option value="">Veuillez choisir une spécialité</option>
+                            <option value="Terroir français">Terroir français</option>
+                            <option value="Cuisine italienne">Cuisine italienne</option>
+                            <option value="Cuisine chinoise">Cuisine chinoise</option>
+                            <option value="Cuisine indienne">Cuisine indienne</option>
+                            <option value="Cuisine veggie">Cuisine veggie</option>
+                        </select>
+                    </li>
+                    <li class="li-form">
+                        <label for="price-select" class="title-form">Fourchette de prix</label>
+                        <select name="price" id="price-select" class="input-formulaire">
+                            <option value="">Fourchette de prix</option>
+                            <option value="-25€">-25€</option>   
+                            <option value="25€-50€">25€-50€</option>   
+                            <option value="+50€">+50€</option>   
+                        </select>
+                    </li>
+                    <li class="li-form">
+                        <label for="hour-open" class="title-form">Horaires d'ouverture</label>
+                        <select name="hour" id="hour-open" class="input-formulaire">
+                            <option value="">Veuillez choisir votre plage horaire</option>
+                            <option value="Midi">Midi</option>   
+                            <option value="Soir">Soir</option> 
+                        </select>
+                    </li>
+                    <li class="li-form">
+                        <label for="rating-select" class="title-form">Note</label>
+                        <select name="rating" id="rating-select" class="input-formulaire">
+                            <option value="">Veuillez choisir une note</option>
+                            <option value="❤️❤️❤️❤️">❤️❤️❤️❤️</option>   
+                            <option value="❤️❤️❤️">❤️❤️❤️</option> 
+                            <option value="❤️❤️">❤️❤️</option> 
+                            <option value="❤️">❤️</option> 
+                        </select>
+                    </li>
+                    <li class="li-form">
+                        <label for="name-restaurant" class="title-form">URL du site</label>
+                        <input type="text" id="name-restaurant" class="input-formulaire">
+                    </li>
+                    <li class="li-form">
+                        <label for="adress-picture" class="title-form">URL de la photo</label>
+                        <input type="text" id="adress-picture" class="input-formulaire">
+                    </li>
+                </ul>
+                <button id="validate-form" type="submit">Valider</button>
+                </fieldset>
+            </form>
+            </section>
+            <button class= "btnHautdePage"a>Retour en haut</a></button>  
     </main>
 
     <footer>
