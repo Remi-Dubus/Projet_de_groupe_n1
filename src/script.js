@@ -211,7 +211,76 @@ form.addEventListener("submit", (e) => {
 	createCard(newRestaurant.pop());
 });
 
-/* bouton Haut de page */
+
+
+
+const formulaireFilter = document.querySelector("#filter-form");
+
+formulaireFilter.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log(event);
+
+if(event.target[1].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.specialities === event.target[1].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[2].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.specialities === event.target[2].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[3].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.specialities === event.target[3].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[4].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.specialities === event.target[4].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[5].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.specialities === event.target[5].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[6].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.rating === event.target[6].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[7].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.rating === event.target[7].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[8].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.rating === event.target[8].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[9].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.rating === event.target[9].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[10].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.hour === event.target[10].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[11].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.hour === event.target[11].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[12].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.price === event.target[12].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[13].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.price === event.target[13].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[14].checked === true) {
+cards.innerHTML = "";
+let filterRestaurant = newRestaurant.filter((r) => r.price === event.target[14].value).map((r) => createCard(r)).slice(-1)
+}
+if(event.target[15].checked === true) {
+cards.innerHTML = "";
+newRestaurant.forEach((restaurant) => createCard(restaurant));
+}
+})	
 
 const btnHautdePage = document.querySelector(".btnHautdePage");
 console.log(btnHautdePage);
@@ -223,41 +292,3 @@ btnHautdePage.addEventListener("click", () => {
 		behavior: "smooth",
 	});
 });
-
-/* les filtres /
-
-let filterArray = [];
-
-function filter(arr) {
-/* destructuration du tableau /
-const { picture, name, adresse, specialities, hour, price, rating } = arr;
-
-/ recuperer le formulaire /
-const formulaireFilter = document.querySelector("#filter-form");
-
-/ add listener /
-formulaireFilter.addEventListener("submit", function (event) {
-    event.preventDefault();
-    console.log(event);
-
-    / boucle verifiant la valeur selectionée /
-    for (let i = 1; i < event.target.length; i++) {
-        if (event.target[i].checked === true) {
-            let valueRestaurant = event.target[i].value
-            console.log(valueRestaurant)
-            for (let j = 0; j < arr.length; j++) {
-                if (event.target[i].value === arr[j].specialities) {
-                console.log(arr[j].specialities)
-
-                / filterArray.push(arr[j]);
-                console.log(filterArray);  */
-			}
-		} 
-	}
-}
-})}
-
-
-
-
-// filter(newRestaurant)
