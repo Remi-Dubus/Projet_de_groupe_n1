@@ -436,6 +436,7 @@ summary:hover {
   font-size: calc(var(--subtitle-size) * 0.8);
   background-color: #125b89;
   color: var(--secondary-color);
+  font-family: "Mulish";
 }
 
 /* footer */
@@ -448,9 +449,12 @@ footer {
   align-items: center;
   padding: 2em 0;
   height: 10px;
+
+  font-family: "Mulish";
+  color: var(--secondary-color);
 }
 
 footer span a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
