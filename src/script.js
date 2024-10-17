@@ -31,7 +31,7 @@ cards.innerHTML = "";
 const newRestaurant = [
   {
     picture:
-      "https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/7363931/pexels-photo-7363931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     name: "Dragon doré",
     adresse: "9 rue Paul Louis Lande",
     specialities: "Cuisine chinoise",
@@ -61,83 +61,83 @@ const newRestaurant = [
   },
   {
     picture:
-      "https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
-    name: "Amore",
-    adresse: "11 place des Grands Hommes",
+      "https://images.pexels.com/photos/10508207/pexels-photo-10508207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Le Taj Mahal",
+    adresse: "24 Rue Parlement Sainte-Catherine",
+    specialities: "Cuisine indienne",
+    hour: "Midi",
+    price: "-25€",
+    rating: "❤️❤️",
+  },
+  {
+    picture:
+      "https://images.pexels.com/photos/14542161/pexels-photo-14542161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "L'Entrecôte",
+    adresse: "4 Cours du 30 Juillet",
+    specialities: "Terroir français",
+    hour: "Midi",
+    price: "25€-50",
+    rating: "❤️❤️❤️",
+  },
+  {
+    picture:
+      "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "La Cuisine d'Hélène",
+    adresse: "44 Cours Anatole France",
+    specialities: "Cuisine veggie",
+    hour: "Midi",
+    price: "-25€",
+    rating: "❤️❤️❤️",
+  },
+  {
+    picture:
+      "https://images.pexels.com/photos/19260842/pexels-photo-19260842/free-photo-of-pizza-repas-frais-fromage.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Chez Peponne",
+    adresse: "31 Cours Georges Clemenceau",
     specialities: "Cuisine italienne",
+    hour: "Soir",
+    price: "25€-50€",
+    rating: "❤️❤️❤️",
+  },
+  {
+    picture:
+      "https://images.pexels.com/photos/28559554/pexels-photo-28559554/free-photo-of-delicieuse-poitrine-de-canard-tranchee-dans-un-plat-elegant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Michel's",
+    adresse: "15 rue du Pas-Saint-Georges",
+    specialities: "Terroir français",
     hour: "Midi",
     price: "25€-50€",
     rating: "❤️❤️",
   },
   {
     picture:
-      "https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
-    name: "Amore",
-    adresse: "11 place des Grands Hommes",
-    specialities: "Cuisine italienne",
+      "https://images.pexels.com/photos/7627443/pexels-photo-7627443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Le Bouchon Bordelais",
+    adresse: "2 rue Courbin",
+    specialities: "Terroir français",
     hour: "Midi",
     price: "25€-50€",
-    rating: "❤️❤️",
+    rating: "❤️❤️❤️❤️",
   },
   {
     picture:
-      "https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
-    name: "Amore",
-    adresse: "11 place des Grands Hommes",
-    specialities: "Cuisine italienne",
-    hour: "Midi",
+      "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Le Rajwal",
+    adresse: "17 rue des Faussets",
+    specialities: "Cuisine indienne",
+    hour: "Soir",
     price: "25€-50€",
-    rating: "❤️❤️",
+    rating: "❤️",
   },
   {
     picture:
-      "https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
-    name: "Amore",
-    adresse: "11 place des Grands Hommes",
-    specialities: "Cuisine italienne",
+      "https://images.pexels.com/photos/725992/pexels-photo-725992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Le Petit Commerce",
+    adresse: "22 rue du Parlement Saint-Pierre",
+    specialities: "terroir français",
     hour: "Midi",
     price: "25€-50€",
-    rating: "❤️❤️",
-  },
-  {
-    picture:
-      "https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
-    name: "Amore",
-    adresse: "11 place des Grands Hommes",
-    specialities: "Cuisine italienne",
-    hour: "Midi",
-    price: "25€-50€",
-    rating: "❤️❤️",
-  },
-  {
-    picture:
-      "https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
-    name: "Amore",
-    adresse: "11 place des Grands Hommes",
-    specialities: "Cuisine italienne",
-    hour: "Midi",
-    price: "25€-50€",
-    rating: "❤️❤️",
-  },
-  {
-    picture:
-      "https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
-    name: "Amore",
-    adresse: "11 place des Grands Hommes",
-    specialities: "Cuisine italienne",
-    hour: "Midi",
-    price: "25€-50€",
-    rating: "❤️❤️",
-  },
-  {
-    picture:
-      "https://img.freepik.com/photos-gratuite/pizza-melangee-tomates-champignons_140725-1818.jpg?t=st=1728988727~exp=1728992327~hmac=39b0cd2ed26b4677895ace6e53ab8902b960fd9ced800e5f798a1502039fbedf&w=740",
-    name: "Amore",
-    adresse: "11 place des Grands Hommes",
-    specialities: "Cuisine italienne",
-    hour: "Midi",
-    price: "25€-50€",
-    rating: "❤️❤️",
+    rating: "❤️",
   },
 ];
 
@@ -198,7 +198,7 @@ newRestaurant.forEach((restaurant) => createCard(restaurant));
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   newRestaurant.push({
-    picture: e.target[7].value,
+    picture: e.target[8].value,
     name: e.target[1].value,
     adresse: e.target[2].value,
     specialities: e.target[3].value,

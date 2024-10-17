@@ -393,13 +393,18 @@ summary:hover {
   margin: 0.5em auto;
   gap: 1.75em;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 87%;
   height: 100%;
   background-color: var(--secondary-color);
   -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
   -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
   box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+}
+
+.card-restaurant ul {
+  max-width: 17em;
+  list-style: none;
 }
 
 .informations-restaurant {
