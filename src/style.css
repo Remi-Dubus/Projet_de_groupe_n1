@@ -2,6 +2,7 @@
   --primary-color: #125b89;
   --secondary-color: #fff6ec;
   --accent-color: #d0e7f6;
+  --button-color: #fcfcfc48;
   --title-size: 3rem;
   --subtitle-size: 1.8rem;
   --pargaraph-size: 1.3rem;
@@ -192,6 +193,11 @@ details {
 
 summary {
   font-family: "QuickSand";
+  background-image: linear-gradient(
+    360deg,
+    var(--primary-color),
+    var(--button-color)
+  );
 }
 
 form {
@@ -268,6 +274,15 @@ summary:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(
+    360deg,
+    var(--primary-color),
+    var(--button-color)
+  );
+
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 
   @media screen and (min-width: 992px) {
     margin: 1.5rem 30% 1.5rem 30%;
@@ -337,11 +352,20 @@ summary:hover {
   padding: 5% 3%;
   width: 50%;
   border-style: none;
-  border: solid 0.3rem var(--primary-color);
   border-radius: 1rem;
+  color: var(--secondary-color);
   font-size: var(--pargaraph-size);
-  background-color: var(--secondary-color);
+  background-color: #125b89;
+  background-image: linear-gradient(
+    360deg,
+    var(--primary-color),
+    var(--button-color)
+  );
   transition: all 0.5s ease-in-out;
+
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 
   @media screen and (min-width: 992px) {
     margin: 1.5rem 0 1.5rem 0;
@@ -437,6 +461,26 @@ summary:hover {
   background-color: #125b89;
   color: var(--secondary-color);
   font-family: "Mulish";
+  border-radius: 1em;
+  border-style: none;
+  transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(
+    360deg,
+    var(--primary-color),
+    var(--button-color)
+  );
+
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 1px 2px 2px 0px rgba(122, 118, 122, 1);
+}
+.btnHautdePage:hover {
+  transform: scale(1.1);
+}
+#buttonBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* footer */
