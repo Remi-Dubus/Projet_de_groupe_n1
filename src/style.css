@@ -19,9 +19,10 @@
 * {
 	margin: 0;
 	padding: 0;
-	outline: solid 1px red;
+	/* outline: solid 1px red; */
 }
 
+/* Corps du site */
 /* Corps du site */
 
 #main-top {
@@ -30,20 +31,23 @@
 	}
 }
 
+/* Bannière */
+
 #banniere {
-    border: solid 10px var(--primary-color);
-    border-right: 6px var(--primary-color);
-    border-left: 6px var(--primary-color);
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    object-fit: cover;
+	border: solid 35px var(--primary-color);
+	border-right: 6px var(--primary-color);
+	border-left: 6px var(--primary-color);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	object-fit: cover;
 }
 
 #image-banniere {
-    width: 1640px;
-    height: 150px;
-    object-fit: cover; 
+	width: 100%;
+	height: 6em;
+	object-fit: cover;
 }
 
 /* HEADER SECTION TOP 3 */
@@ -77,15 +81,17 @@
 	width: 49%;
 	border-radius: 2em;
 	outline: solid 2px var(--primary-color);
+
 	-webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 	-moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 	box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 }
-#top3 p {
+#top3 ul {
 	background-color: var(--secondary-color);
 	outline: solid 2px var(--primary-color);
 	border-radius: 0.3em;
 	font-family: "Mulish";
+	list-style: none;
 
 	-webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 	-moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
@@ -99,7 +105,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-
+	text-align: center;
 	width: 49%;
 }
 .restaurant1-3 {
@@ -175,7 +181,7 @@ details {
 	@media screen and (min-width: 992px) {
 		width: 50%;
 		height: 90%;
-		margin: 5% 1%;
+		margin: 1% 1%;
 	}
 }
 
@@ -203,7 +209,7 @@ summary {
 	text-align: center;
 	font-size: calc(var(--subtitle-size) * 1.2);
 	background-color: var(--primary-color);
-	margin: 2rem 12.5% 2rem 12.5%;
+	margin: 2rem 12.5% 1rem 12.5%;
 	padding: 1rem 0;
 	width: 75%;
 	border-radius: 2rem;
@@ -268,8 +274,9 @@ summary:hover {
 	width: 80%;
 	margin: 5% 5%;
 	border: solid 0.3rem var(--primary-color);
-	border-radius: 1rem;
+	border-radius: 2rem;
 	background-color: var(--accent-color);
+	font-family: "Mulish";
 
 	@media screen and (min-width: 992px) {
 		width: 91%;
@@ -341,29 +348,29 @@ summary:hover {
 	display: flex;
 	border-radius: 2em;
 	padding: 0.5em;
-	margin: 1em auto;
+	margin: 0.5em auto;
 	gap: 1.75em;
 	align-items: center;
 	justify-content: center;
-	width: 80%;
-	height: auto;
+	width: 87%;
+	height: 100%;
 	background-color: var(--secondary-color);
+	-webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+	-moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+	box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 }
-
-/* .card-restaurant ul {
-    display: flex;
-    gap: 0.25em;
-} */
 
 .informations-restaurant {
 	display: flex;
 	flex-direction: column;
 	gap: 8%;
 	width: 100%;
+	font-family: "Mulish";
+	font-size: 11px;
 }
 
 .picture-restaurant {
-	border-radius: 4em;
+	border-radius: 2em;
 	width: 40%;
 }
 
@@ -372,7 +379,12 @@ summary:hover {
 	border-radius: 0.5em;
 	background-color: var(--primary-color);
 	color: white;
+	font-size: 14px;
 	text-align: center;
+	font-family: "QuickSand";
+	-webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+	-moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+	box-shadow: 1px 2px 2px 0px rgba(122, 118, 122, 1);
 }
 
 @media screen and (min-width: 992px) {
@@ -382,6 +394,30 @@ summary:hover {
 		margin: 0 auto 0 auto;
 		align-items: stretch;
 	}
+
+	.card-restaurant {
+		width: 95%;
+		height: auto;
+	}
+
+	.informations-restaurant {
+		font-size: 18px;
+	}
+
+	.card-name {
+		font-size: 24px;
+	}
+}
+
+/* bouton haut de page */
+
+.btnHautdePage {
+	margin: 1.5rem 0 0.7rem 0;
+	padding: 1% 1%;
+	text-align: center;
+	font-size: calc(var(--subtitle-size) * 0.8);
+	background-color: #125b89;
+	color: var(--secondary-color);
 }
 
 /* footer */
@@ -394,7 +430,6 @@ footer {
 	align-items: center;
 	padding: 2em 0;
 	height: 10px;
-
 }
 
 footer span a {
