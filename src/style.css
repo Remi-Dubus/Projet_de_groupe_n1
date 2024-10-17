@@ -45,8 +45,14 @@
 }
 #image-banniere {
   width: 100%;
-  height: 6em;
+  height: 10em;
   object-fit: cover;
+}
+
+h1 {
+  font-family: "QuickSand";
+  margin: 0.5em 0.5em;
+  color: var(--primary-color);
 }
 
 /* HEADER SECTION TOP 3 */
@@ -184,12 +190,24 @@ details {
   }
 }
 
+summary {
+  font-family: "QuickSand";
+}
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3%;
+}
+
+form h3 {
+  font-family: "QuickSand";
+}
+
+form li {
+  font-family: "Mulish";
 }
 
 fieldset {
@@ -287,6 +305,7 @@ summary:hover {
   margin: 1rem 0 3rem 0;
   text-align: center;
   font-size: var(--subtitle-size);
+  font-family: "QuickSand";
 }
 
 .ul-form {
