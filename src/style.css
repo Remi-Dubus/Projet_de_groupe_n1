@@ -20,10 +20,9 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline: solid 1px red; */
+  outline: solid 1px red;
 }
 
-/* Corps du site */
 /* Corps du site */
 
 #main-top {
@@ -262,6 +261,10 @@ summary:hover {
   background-color: #125b89;
   color: var(--secondary-color);
   border-radius: 5rem;
+}
+
+#no-filter {
+  margin-top: 1.5rem;
 }
 
 #validate-filter {
