@@ -20,7 +20,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: solid 1px red;
+  /* outline: solid 1px red; */
 }
 
 /* Corps du site */
@@ -51,8 +51,17 @@
 
 h1 {
   font-family: "QuickSand";
-  margin: 0.5em 0.5em;
   color: var(--primary-color);
+  font-size: calc(var(--title-size) * 1.1);
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: calc(var(--title-size) * 1.8);
+    padding-left: 0.2em;
+    text-align: left;
+  }
 }
 
 /* HEADER SECTION TOP 3 */
@@ -118,12 +127,23 @@ h1 {
   flex-direction: row;
   align-items: center;
   gap: 1em;
+  transition: all 0.5s ease-in-out;
 }
+
+.restaurant1-3:hover {
+  transform: scale(1.1);
+}
+
 #restaurant2 {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   gap: 1em;
+  transition: all 0.5s ease-in-out;
+}
+
+#restaurant2:hover {
+  transform: scale(1.1);
 }
 
 /* MEDIA QUERIES HEADER */
@@ -251,8 +271,8 @@ summary:hover {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  margin-left: 40px;
 }
-
 .title-filter {
   margin: 1.5rem 0 0.7rem 0;
   padding: 1rem 0;
@@ -303,6 +323,12 @@ summary:hover {
   font-size: var(--pargaraph-size);
 }
 
+@media screen and (min-width: 992px) {
+  #main-top {
+    margin: 1em 1em;
+  }
+}
+
 /* Ajouter un restaurant */
 
 #add-restaurant {
@@ -315,7 +341,7 @@ summary:hover {
 
   @media screen and (min-width: 992px) {
     width: 91%;
-    margin: 5% 1%;
+    margin: 1% 1%;
   }
 }
 
@@ -403,6 +429,12 @@ summary:hover {
   -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
   -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
   box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+
+  transition: all 0.5s ease-in-out;
+}
+
+.card-restaurant:hover {
+  transform: scale(1.02);
 }
 
 .card-restaurant ul {
@@ -422,10 +454,17 @@ summary:hover {
 .picture-restaurant {
   border-radius: 2em;
   width: 40%;
+
+  border-radius: 2em;
+  outline: solid 2px var(--primary-color);
+
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
+  box-shadow: 3px 4px 3px 0px rgba(122, 118, 122, 1);
 }
 
 .card-name {
-  margin: 0 0.5em 1em 0.5em;
+  margin: 0 0.5em 0.5em 0.5em;
   border-radius: 0.5em;
   background-color: var(--primary-color);
   color: white;
@@ -444,7 +483,7 @@ summary:hover {
     margin: 0 auto 0 auto;
     align-items: stretch;
     height: fit-content;
-    }
+  }
 
   .card-restaurant {
     width: 95%;
@@ -463,7 +502,7 @@ summary:hover {
 /* bouton haut de page */
 
 .btnHautdePage {
-  margin: 1.5rem 0 0.7rem 0;
+  margin: 1rem 0 0.7rem 0;
   padding: 1% 1%;
   text-align: center;
   font-size: calc(var(--subtitle-size) * 0.8);
