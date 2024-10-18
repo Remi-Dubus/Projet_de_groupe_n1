@@ -364,9 +364,7 @@ formulaireFilter.addEventListener("submit", function (event) {
   }
   if (event.target[15].checked === true) {
     cards.innerHTML = "";
-    let filterRestaurant = newRestaurant.forEach((restaurant) =>
-      createCard(restaurant)
-    );
+    let filterRestaurant = newRestaurant.forEach((restaurant) => createCard(restaurant));
   }
 });
 
