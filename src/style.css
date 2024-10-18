@@ -443,11 +443,12 @@ summary:hover {
     grid-template-columns: 1fr 1fr;
     margin: 0 auto 0 auto;
     align-items: stretch;
-  }
+    height: fit-content;
+    }
 
   .card-restaurant {
     width: 95%;
-    height: auto;
+    height: fit-content;
   }
 
   .informations-restaurant {
