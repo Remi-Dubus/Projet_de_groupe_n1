@@ -73,7 +73,7 @@ const newRestaurant = [
     picture:
       "https://images.pexels.com/photos/14542161/pexels-photo-14542161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     name: "L'Entrecôte",
-    adresse: "4 Cours du 30 Juillet 1995",
+    adresse: "4 Cours du 30 Juillet 1965",
     specialities: "Terroir français",
     hour: "Midi",
     price: "25€-50",
