@@ -275,7 +275,8 @@ summary:hover {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  margin-left: 40px;
+  margin-left: 10%;
+
 }
 .title-filter {
   margin: 1.5rem 0 0.7rem 0;
@@ -489,7 +490,7 @@ summary:hover {
 
   .card-restaurant {
     width: 95%;
-    height: fit-content;
+    height: 85%;
   }
 
   .informations-restaurant {
@@ -497,7 +498,7 @@ summary:hover {
   }
 
   .card-name {
-    font-size: 24px;
+    font-size: 24;
   }
 }
 
