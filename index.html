@@ -5,27 +5,25 @@
 
     <link rel="icon" type="image/x-icon" href="/public/images/favicon.png">
 
-    <meta charset="UTF-8" />
-    <meta http-esquiv="-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="Un site dédié aux restaurants de Bordeaux propose des avis, des menus et des informations pratiques pour découvrir la gastronomie locale et choisir l'endroit idéal." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Un site dédié aux restaurants de Bordeaux propose des avis, des menus et des informations pratiques pour découvrir la gastronomie locale et choisir l'endroit idéal.">
 
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
-    <header>
-      <h1>Crousti Eats</h1>
-      <section id="banniere">
+    <header> 
+      <section>
+        <h1>Crousti Eats</h1>
         <img
           src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="assiette de crudités"
-          id="image-banniere"
-        />
+          id="image-banniere">
       </section>
       <nav id="top3">
-        <h2>Top 3 des meilleures adresses bordelaises</h2>
-        <section>
+        <section> 
+          <h2>Top 3 des meilleures adresses bordelaises</h2>
           <article class="restaurant1-3">
             <img
               src="https://images.pexels.com/photos/7363931/pexels-photo-7363931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -220,34 +218,19 @@
                 <li class="li-form" id="no-filter">
                   <input
                     type="radio"
-                    id="radio-français"
+                    id="radio-no-filtre"
                     name="filter-radio"
-                    value="Terroir français"
+                    value=""
                   />
-                  <label for="radio-français">Pas de filtres</label>
+                  <label for="radio-no-filtre">Pas de filtres</label>
                 </li>
               </ul>
               <button id="validate-filter" type="submit">Valider</button>
             </fieldset>
           </form>
-        </details>
-        <section class="cards">
-          <article class="card-restaurant">
-            <img
-              src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="assiette de sushis"
-              class="picture-restaurant"
-            />
-            <ul class="informations-restaurant">
-              <li class="list-informations">Dragon doré</li>
-              <li class="list-informations">9 rue Paul Louis Lande</li>
-              <li class="list-informations">Cuisine asiatique</li>
-              <li class="list-informations">Soir</li>
-              <li class="list-informations">-25€</li>
-              <li class="list-informations">❤️❤️❤️❤️</li>
-            </ul>
-          </article>
-        </section>
+        </details> 
+      <div class="cards">
+      </div>
       </section>
       <section>
         <form id="add-restaurant" method="post">

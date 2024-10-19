@@ -2,32 +2,6 @@ const cards = document.querySelector(".cards");
 // Retirer la card restaurant mise en place dans le code html
 cards.innerHTML = "";
 
-// Tableau qui recense toutes les informations de toutes les cartes restaurant
-
-// const top3 = [
-// 	{
-// 		picture:
-// 			"https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-// 		name: "Dragon doré",
-// 		adresse: "9 rue Paul Louis Lande",
-// 		rating: "❤️❤️❤️❤️",
-// 	},
-// 	{
-// 		picture:
-// 			"https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-// 		name: "Dragon doré",
-// 		adresse: "9 rue Paul Louis Lande",
-// 		rating: "❤️❤️❤️❤️",
-// 	},
-// 	{
-// 		picture:
-// 			"https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-// 		name: "Dragon doré",
-// 		adresse: "9 rue Paul Louis Lande",
-// 		rating: "❤️❤️❤️❤️",
-// 	},
-// ];
-
 const newRestaurant = [
   {
     picture:
